@@ -23,7 +23,7 @@ import {
   AiOutlineSearch
 } from 'react-icons/ai';
 import { BsFillCameraVideoFill, BsPlus } from 'react-icons/bs';
-import React, { Fragment } from 'react';
+import * as React from 'react';
 
 import Logo from '../logo';
 import ColorModeSwitcher from './ColorModeSwitcher';
@@ -33,7 +33,7 @@ export default function () {
   const mobileNav = useDisclosure();
 
   return (
-    <Fragment>
+    <React.Fragment>
       <chakra.header
         bg={bg}
         w="full"
@@ -150,6 +150,6 @@ export default function () {
           </Flex>
         </Box>
       </chakra.header>
-    </Fragment>
+    </React.Fragment>
   );
 }
