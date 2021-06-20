@@ -1,7 +1,7 @@
-import { Box } from '@chakra-ui/react';
-import * as React from 'react';
+import { Box } from "@chakra-ui/react";
+import * as React from "react";
 
-import NavBar from './components/navbar';
+import NavBar from "./components/navbar";
 
 const App: React.FC = () => {
   return (

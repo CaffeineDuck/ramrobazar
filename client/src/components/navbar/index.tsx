@@ -13,23 +13,23 @@ import {
   Avatar,
   InputGroup,
   InputLeftElement,
-  Input
-} from '@chakra-ui/react';
+  Input,
+} from "@chakra-ui/react";
 import {
   AiOutlineMenu,
   AiFillHome,
   AiOutlineInbox,
   AiFillBell,
-  AiOutlineSearch
-} from 'react-icons/ai';
-import { BsFillCameraVideoFill, BsPlus } from 'react-icons/bs';
-import * as React from 'react';
+  AiOutlineSearch,
+} from "react-icons/ai";
+import { BsFillCameraVideoFill, BsPlus } from "react-icons/bs";
+import * as React from "react";
 
-import Logo from '../logo';
-import ColorModeSwitcher from './ColorModeSwitcher';
+import Logo from "../logo";
+import ColorModeSwitcher from "./ColorModeSwitcher";
 
 export default function () {
-  const bg = useColorModeValue('white', 'gray.800');
+  const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
 
   return (
@@ -41,15 +41,15 @@ export default function () {
         py={4}
         shadow="md"
       >
-        <Box mx={{ base: '15rem', sm: '1rem' }}>
+        <Box mx={{ base: "15rem", sm: "1rem" }}>
           <Flex alignItems="center" justifyContent="space-between" mx="auto">
             <HStack display="flex" spacing={3} alignItems="center">
-              <Box display={{ base: 'inline-flex', md: 'none' }}>
+              <Box display={{ base: "inline-flex", md: "none" }}>
                 <IconButton
-                  display={{ base: 'flex', md: 'none' }}
+                  display={{ base: "flex", md: "none" }}
                   aria-label="Open menu"
                   fontSize="20px"
-                  color={useColorModeValue('gray.800', 'inherit')}
+                  color={useColorModeValue("gray.800", "inherit")}
                   variant="ghost"
                   icon={<AiOutlineMenu />}
                   onClick={mobileNav.onOpen}
@@ -59,7 +59,7 @@ export default function () {
                   top={0}
                   left={0}
                   right={0}
-                  display={mobileNav.isOpen ? 'flex' : 'none'}
+                  display={mobileNav.isOpen ? "flex" : "none"}
                   flexDirection="column"
                   p={2}
                   pb={4}
@@ -111,7 +111,7 @@ export default function () {
                 <Logo />
               </chakra.a>
 
-              <HStack spacing={3} display={{ base: 'none', md: 'inline-flex' }}>
+              <HStack spacing={3} display={{ base: "none", md: "inline-flex" }}>
                 <InputGroup>
                   <InputLeftElement
                     pointerEvents="none"
@@ -123,7 +123,7 @@ export default function () {
             </HStack>
             <HStack
               spacing={3}
-              display={mobileNav.isOpen ? 'none' : 'flex'}
+              display={mobileNav.isOpen ? "none" : "flex"}
               alignItems="center"
             >
               <Button colorScheme="brand" leftIcon={<BsPlus />}>
@@ -132,9 +132,9 @@ export default function () {
 
               <chakra.a
                 p={3}
-                color={useColorModeValue('gray.800', 'inherit')}
+                color={useColorModeValue("gray.800", "inherit")}
                 rounded="sm"
-                _hover={{ color: useColorModeValue('gray.800', 'gray.600') }}
+                _hover={{ color: useColorModeValue("gray.800", "gray.600") }}
               >
                 <AiFillBell />
                 <VisuallyHidden>Notifications</VisuallyHidden>
